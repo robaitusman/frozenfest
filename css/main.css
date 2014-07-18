@@ -919,7 +919,6 @@ border: 1px solid #F7F7F5;
 overflow: hidden;
 margin-bottom: 34px;
 background: #FFF;
-padding: 10PX;
 -webkit-border-radius: 9px;
 border-radius: 9px;
 }
@@ -935,10 +934,14 @@ border-radius: 9px;
 }
 
 .productinfo h2{
-	color: #56c9ea;
-	font-family: 'ubuntu bold', sans-serif;
-	font-size: 24px;
-	font-weight: 700;
+	color: #FFFFFF;
+font-family: 'ubuntu bold', sans-serif;
+font-size: 19px;
+font-weight: 700;
+background: #a5d22a;
+width: 57%;
+margin: 18px auto;
+padding: 7px;
 }
 .product-overlay h2{
 	color: #fff;
@@ -950,19 +953,19 @@ border-radius: 9px;
 
 .productinfo p{
   font-family: 'ubuntu bold', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   color: #696763;
 }
 
 .productinfo img{
-  width: 100%;
+  width: 60%;
+  height: 180px;
 }
 
 .productinfo{
  position:relative;
- background-color:#F5F5F5;
-
+padding: 30px 0 10px 0;
 }
 
 .product-overlay {
