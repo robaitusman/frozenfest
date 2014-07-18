@@ -76,14 +76,7 @@ a#scrollUp i{
 **************************/
 
 .header_top {
-  background: #c5e963; /* Old browsers */
-background: -moz-linear-gradient(top,  #c5e963 0%, #b3d45a 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c5e963), color-stop(100%,#b3d45a)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #c5e963 0%,#b3d45a 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #c5e963 0%,#b3d45a 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #c5e963 0%,#b3d45a 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #c5e963 0%,#b3d45a 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5e963', endColorstr='#b3d45a',GradientType=0 ); /* IE6-9 */
+  background: #a5d22a;
 
 }
 
@@ -1886,8 +1879,8 @@ width:90px
 }
 
 .register-req, .step-one .heading {
-  background: none repeat scroll 0 0 #F0F0E9;
-  color: #363432;
+  background: none repeat scroll 0 0 #a5d22a;
+  color: #fff;
   font-size: 20px;
   margin-bottom: 35px;
   padding: 10px 25px;
