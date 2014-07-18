@@ -846,13 +846,8 @@ border-bottom: 1px solid #F3F3F3;
   color: #696763;
 }
 
-.shipping {
-  background-color: #F2F2F2;
-  margin-top: 40px;
-  overflow: hidden;
-  padding-top: 20px;
-  position: relative;
-}
+.shipping img{
+width:100%;}
 
 
 .price-range{
