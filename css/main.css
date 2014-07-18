@@ -727,17 +727,19 @@ border-radius: 15px;
   margin-bottom: 35px;
   padding-bottom: 20px;
   padding-top: 15px;
+  background:#FFFFFF;
 }
 .left-sidebar h2, .brands_products h2 {
-  color: #56c9ea;
-  font-family: 'ubuntu bold', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0 auto 30px;
-  text-align: center;
-  text-transform: uppercase;
-  position: relative;
-  z-index:3;
+color: #fff;
+font-family: 'ubuntu bold', sans-serif;
+padding: 9px;
+font-size: 18px;
+font-weight: 700;
+margin: 0 auto 3px;
+text-align: center;
+text-transform: uppercase;
+background:#56c9ea;
+z-index: 3;
 }
 
 .left-sidebar h2:after, h2.title:after{
@@ -752,15 +754,7 @@ border-radius: 15px;
 }
 
 .left-sidebar h2:before{
-	content: " ";
-	position: absolute;
-	background: #fff;
-	bottom: -6px;
-	width: 130px;
-	height: 30px;
-	z-index: -1;
-	left: 50%;
-	margin-left: -65px;
+
 }
 
 h2.title:before{
@@ -784,10 +778,11 @@ h2.title:before{
 }
 
 .category-products .panel-default .panel-heading {
-  background-color: #FFFFFF;
-  border: 0 none;
-  color: #FFFFFF;
-  padding: 5px 20px;
+ background-color: #FFFFFF;
+border: 0 none;
+color: #FFFFFF;
+padding: 9px 20px;
+border-bottom: 1px solid #F3F3F3;
 }
 
 .category-products .panel-default .panel-heading .panel-title a {
@@ -921,6 +916,8 @@ margin-bottom: 34px;
 background: #FFF;
 -webkit-border-radius: 9px;
 border-radius: 9px;
+-webkit-box-shadow: 0 0 9px 0 #E6E6E6;
+box-shadow: 0 0 9px 0 #E6E6E6;
 }
 
 .single-products {
