@@ -1712,6 +1712,11 @@ background: #cbcbcb;
   margin: 15px -70px 10px 25px;
 }
 
+.cart_product img
+{
+width:90px
+}
+
 .cart_quantity_button a {
   background:#F0F0E9;
   color: #696763;
@@ -1750,7 +1755,7 @@ background: #cbcbcb;
 }
 
 .cart_delete a:hover {
-  background:#56c9ea
+  background:#a5d22a;
 }
 
 

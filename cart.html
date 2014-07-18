@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | E-FROZFEST</title>
+    <title>Keranjang | E-FROZFEST</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -85,10 +85,10 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li class="toko"><a href="index.html" class="active" >Toko</a></li>
+								<li class="toko"><a href="index.html"  >Toko</a></li>
                                 <li class="track"><a href="index.html" >Tracking</a></li>
                                 <li class="history"><a href="index.html" >Riwayat</a></li>
-                                <li class="keranjang"><a href="index.html" >Keranjang</a></li>
+                                <li class="keranjang"><a href="index.html" class="active" >Keranjang</a></li>
                                 
 								
 							</ul>
@@ -104,650 +104,108 @@
 		</div><!--/header-bottom-->
 	</header><!--/header-->
 	
-	<section id="slider"><!--slider-->
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
-							<li data-target="#slider-carousel" data-slide-to="1"></li>
-							<li data-target="#slider-carousel" data-slide-to="2"></li>
-						</ol>
-						
-						<div class="carousel-inner">
-							<div class="item active">
-								<div class="col-sm-6">
-									<h1>FROZFEST</h1>
-									<h2>Solusi Belanja Masa Depan</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-									<button type="button" class="btn btn-default get">Get it now</button>
-								</div>
-								<div class="col-sm-6">
-									<img src="images/home/girl1.jpg" class="girl img-responsive" alt="" />
-									<img src="images/home/pricing.png"  class="pricing" alt="" />								</div>
-							</div>
-							<div class="item">
-								<div class="col-sm-6">
-									<h1><span>E</span>-FROZFEST</h1>
-									<h2>100% Responsive Design</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-									<button type="button" class="btn btn-default get">Get it now</button>
-								</div>
-								<div class="col-sm-6">
-									<img src="images/home/girl2.jpg" class="girl img-responsive" alt="" />
-									<img src="images/home/pricing.png"  class="pricing" alt="" />								</div>
-							</div>
-							
-							<div class="item">
-								<div class="col-sm-6">
-									<h1><span>E</span>-FROZFEST</h1>
-									<h2>Free Ecommerce Template</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-									<button type="button" class="btn btn-default get">Get it now</button>
-								</div>
-								<div class="col-sm-6">
-									<img src="images/home/girl3.jpg" class="girl img-responsive" alt="" />
-									<img src="images/home/pricing.png" class="pricing" alt="" />								</div>
-							</div>
-						</div>
-						
-						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
-							<i class="fa fa-angle-left"></i>						</a>
-						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
-							<i class="fa fa-angle-right"></i>						</a>					</div>
-                            
-                            
-                            <div style="background:#5fcae9; border-bottom:5px solid #4bb8d7; height:71px; width:97.5%; position:absolute; bottom:0;">
-                             <a href="#" style="float: right; padding: 20px 30px 16px 30px; background: #c2e562; border-bottom: 5px solid #b0d15a; color: #fff; font-family:Arial, Helvetica, sans-serif; font-size:21px;
-font-size: 21px;">Daftar Sekarang</a>
-                            </div>
-				</div>
-		  </div>
-		</div>
-	</section><!--/slider-->
+	<!--/slider-->
 	
-	<section>
+	<section id="cart_items">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-3">
-					<div class="left-sidebar">
-						<h2 style="background:#a5d22a">Category</h2>
-						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
-											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Nugget										</a>									</h4>
+			<div class="breadcrumbs">
+				<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li class="active">Keranjang</li>
+				</ol>
+			</div>
+			<div class="table-responsive cart_info">
+				<table class="table table-condensed" style="background:#fff">
+					<thead>
+						<tr class="cart_menu">
+							<td class="image">Item</td>
+							<td class="description"></td>
+							<td class="price">Price</td>
+							<td class="quantity">Quantity</td>
+							<td class="total">Total</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="cart_product">
+								<a href=""><img src="images/produk/1.png" alt=""></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="">Colorblock Scuba</a></h4>
+								<p>Web ID: 1089772</p>
+							</td>
+							<td class="cart_price">
+								<p>$59</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
 								</div>
-								<div id="sportswear" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul>
-											<li><a href="#">Nugget Ayam </a></li>
-											<li><a href="#">Nugget Sapi </a></li>
-											<li><a href="#">Nugget Sea Food </a></li>
-											<li><a href="#">Nugget Roti</a></li>
-											
-										</ul>
-									</div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">$59</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+
+						<tr style="background: #FCFCFC;">
+							<td class="cart_product">
+								<a href=""><img src="images/produk/2.png" alt=""></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="">Colorblock Scuba</a></h4>
+								<p>Web ID: 1089772</p>
+							</td>
+							<td class="cart_price">
+								<p>$59</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
 								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#mens">
-											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Sea Food										</a>									</h4>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">$59</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="cart_product">
+								<a href=""><img src="images/produk/3.png" alt=""></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="">Colorblock Scuba</a></h4>
+								<p>Web ID: 1089772</p>
+							</td>
+							<td class="cart_price">
+								<p>$59</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
 								</div>
-								<div id="mens" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul>
-											<li><a href="#">Ikan Tuna</a></li>
-											<li><a href="#">Cumi</a></li>
-											<li><a href="#">Udang</a></li>
-											<li><a href="#">Tempura</a></li>
-											
-										</ul>
-									</div>
-								</div>
-							</div>
-							
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#womens">
-											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Sosis										</a>									</h4>
-								</div>
-								<div id="womens" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul>
-											<li><a href="#">Sosis Ayam</a></li>
-											<li><a href="#">Sosis Sapi</a></li>
-											
-										</ul>
-									</div>
-								</div>
-							</div>
-                            
-                            <div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#beku">
-											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Makanan Beku										</a>									</h4>
-								</div>
-								<div id="beku" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul>
-											<li><a href="#">Daging Ayam</a></li>
-											<li><a href="#">Daging Sapi</a></li>
-											
-										</ul>
-									</div>
-								</div>
-							</div>
-							
-							
-						</div><!--/category-products-->
-					
-						<div class="brands_products"><!--brands_products-->
-							<h2>Brands</h2>
-							<div class="brands-name">
-								<ul class="nav nav-pills nav-stacked">
-									<li><a href="#"> <span class="pull-right">(50)</span>Fiesta</a></li>
-									<li><a href="#"> <span class="pull-right">(56)</span>Oisi</a></li>
-									<li><a href="#"> <span class="pull-right">(27)</span>Sozzis</a></li>
-									<li><a href="#"> <span class="pull-right">(32)</span>So Good</a></li>
-									<li><a href="#"> <span class="pull-right">(5)</span>Vida</a></li>
-									
-								</ul>
-							</div>
-						</div><!--/brands_products-->
-						
-						<div class="price-range"><!--price-range-->
-							<h2>Price Range</h2>
-							<div class="well text-center">
-								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
-								 <b class="pull-left">$ 0</b> <b class="pull-right">$ 600</b>							</div>
-						</div><!--/price-range-->
-						
-						<div class="shipping text-center"><!--shipping-->
-							<img src="images/home/shipping.jpg" alt="" />						</div><!--/shipping-->
-					</div>
-				</div>
-				
-		  <div class="col-sm-9 padding-right">
-					<div class="features_items"><!--features_items-->
-					
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="images/produk/1.png" alt="" />
-											<h2>Rp 78.000,-</h2>
-											<p>Fiesta Sticky</p>
-											<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>	
-                                            </div>
-										
-								</div>
-								
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/produk/2.png" alt="" />
-										<h2>Rp 67.000,-</h2>
-										<p>Fiesta Pok-Pok</p>
-										<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-									
-								</div>
-								
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/produk/3.png" alt="" />
-										<h2>Rp 59.000,-</h2>
-										<p>Fiesta Keecho</p>
-										<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-									
-								</div>
-								
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/produk/4.png" alt="" />
-										<h2>Rp 34.000,-</h2>
-										<p>Fiesta Pizza ABC</p>
-										<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-									
-									<img src="images/home/new.png" class="new" alt="" />								</div>
-								
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/produk/5.png" alt="" />
-										<h2>Rp 44.000,-</h2>
-										<p>Fiesta Spicy Chick</p>
-										<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-									
-									<img src="images/home/sale.png" class="new" alt="" />								</div>
-								
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/produk/6.png" alt="" />
-										<h2>Rp 56.000,-</h2>
-										<p>Fiesta Crispy Crunch</p>
-										<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-									
-								</div>
-								
-							</div>
-						</div>
-					</div><!--features_items-->
-					
-					<div class="category-tab"><!--category-tab-->
-						<div class="col-sm-12">
-							<ul class="nav nav-tabs">
-								<li class="active"><a href="#tshirt" data-toggle="tab">T-Shirt</a></li>
-								<li><a href="#blazers" data-toggle="tab">Blazers</a></li>
-								<li><a href="#sunglass" data-toggle="tab">Sunglass</a></li>
-								<li><a href="#kids" data-toggle="tab">Kids</a></li>
-								<li><a href="#poloshirt" data-toggle="tab">Polo shirt</a></li>
-							</ul>
-						</div>
-						<div class="tab-content">
-							<div class="tab-pane fade active in" id="tshirt" >
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="images/produk/1.png" alt="" />
-											<h2>Rp 78.000,-</h2>
-											<p>Fiesta Sticky</p>
-											<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>	
-                                            </div>
-										
-								</div>
-								
-							</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/produk/2.png" alt="" />
-										<h2>Rp 67.000,-</h2>
-										<p>Fiesta Pok-Pok</p>
-										<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-									
-								</div>
-								
-							</div>
-                            
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/produk/2.png" alt="" />
-										<h2>Rp 67.000,-</h2>
-										<p>Fiesta Pok-Pok</p>
-										<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-									
-								</div>
-								
-							</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery4.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="tab-pane fade" id="blazers" >
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery4.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery3.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery2.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery1.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="tab-pane fade" id="sunglass" >
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery3.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery4.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery1.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery2.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="tab-pane fade" id="kids" >
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery1.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery2.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery3.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery4.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="tab-pane fade" id="poloshirt" >
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery2.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery4.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery3.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="images/home/gallery1.jpg" alt="" />
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!--/category-tab-->
-					
-					<div class="recommended_items"><!--recommended_items-->
-						<h2 class="title text-center">recommended items</h2>
-						
-						<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
-							<div class="carousel-inner">
-								<div class="item active">	
-								<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="images/produk/1.png" alt="" />
-											<h2>Rp 78.000,-</h2>
-											<p>Fiesta Sticky</p>
-											<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>	
-                                            </div>
-										
-								</div>
-								
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/produk/2.png" alt="" />
-										<h2>Rp 67.000,-</h2>
-										<p>Fiesta Pok-Pok</p>
-										<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-									
-								</div>
-								
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/produk/3.png" alt="" />
-										<h2>Rp 59.000,-</h2>
-										<p>Fiesta Keecho</p>
-										<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-									
-								</div>
-								
-							</div>
-						</div>
-                                    
-								</div>
-                                
-								<div class="item">	
-										<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/produk/4.png" alt="" />
-										<h2>Rp 34.000,-</h2>
-										<p>Fiesta Pizza ABC</p>
-										<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-									
-									<img src="images/home/new.png" class="new" alt="" />								</div>
-								
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/produk/5.png" alt="" />
-										<h2>Rp 44.000,-</h2>
-										<p>Fiesta Spicy Chick</p>
-										<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-									
-									<img src="images/home/sale.png" class="new" alt="" />								</div>
-								
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/produk/6.png" alt="" />
-										<h2>Rp 56.000,-</h2>
-										<p>Fiesta Crispy Crunch</p>
-										<a href="#" class="btn btn-default add-to-cart gray"><i class="fa fa-minus"></i></a>	
-                                            <a href="#" class="btn btn-default add-to-cart biru"><i class="fa fa-plus"></i></a>		</div>
-									
-								</div>
-								
-							</div>
-						</div>
-								</div>
-							</div>
-							 <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
-								<i class="fa fa-angle-left"></i>							  </a>
-							  <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
-								<i class="fa fa-angle-right"></i>							  </a>						</div>
-					</div><!--/recommended_items-->
-				</div>
-		  </div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">$59</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</section>
 	
