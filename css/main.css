@@ -279,13 +279,14 @@ border-top: 1px solid #59b3cc;
 .mainmenu ul li a {
 color: #fff;
 font-family: 'ubuntu bold', sans-serif;
-font-size: 17px;
+font-size: 14px;
 font-weight: 300;
 padding: 11px 22px 0px 37px;
 margin-top: -8px;
 
 }
 .mainmenu ul .toko a { background: url(../images/toko.png) no-repeat;}
+.mainmenu ul .fave a { background: url(../images/fave.png) no-repeat;}
 .mainmenu ul .track a { background: url(../images/track.png) no-repeat;}
 .mainmenu ul .history a { background: url(../images/history.png) no-repeat;}
 .mainmenu ul .keranjang a { background: url(../images/keranjang.png) no-repeat;}
